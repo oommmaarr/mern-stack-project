@@ -1,9 +1,9 @@
-import { Landing } from "./(pages)/home/page";
+import { Landing } from "./components/Landing/page";
 
 export default function Home() {
   return (
   <div>
-     <Landing/>
-   </div>   
+     <Landing /> 
+    </div>   
   );
 }

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ListNotch = ({ open, setOpen }) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper className="md:hidden relative">
       <div className="background">
         <button
           className={`menu__icon ${open ? "open" : ""}`}
@@ -45,8 +45,8 @@ const StyledWrapper = styled.div`
 
   /* <style for menu__icon> ======== */
   .menu__icon {
-    width: 32px;
-    height: 32px;
+    width: 26px;
+    height: 26px;
     padding: 4px;
     display: flex;
     flex-direction: column;

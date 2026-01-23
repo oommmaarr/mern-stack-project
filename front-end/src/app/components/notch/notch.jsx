@@ -22,7 +22,7 @@ const Notch = () => {
         <div className="flex items-center justify-between 2xl:w-5/12 w-full rounded-full bg-black 2xl:px-10 px-6 md:py-2 py-3 mt-10">
           <h1 className="font-bold text-[#FC530A] text-lg">ALI BADR.</h1>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-15">
             <ListNotch open={open} setOpen={setOpen} />
 
             <ul className="hidden md:flex gap-10 text-[#C7C7C7]">
@@ -39,6 +39,9 @@ const Notch = () => {
                 </li>
               ))}
             </ul>
+            <button className="bg-[#FC530A] rounded-full text-[#D9D9D9] 2xl:px-5 px-4 2xl:py-3 py-2 md:flex hidden items-end justify-end 2xl:-mx-5 lg:-mx-3 font-semibold cursor-pointer">
+              Sign up
+            </button>
           </div>
         </div>
       </div>
@@ -76,6 +79,9 @@ const Notch = () => {
               </li>
             ))}
           </ul>
+          <button className="bg-[#FC530A] rounded-full text-[#D9D9D9] 2xl:px-6 px-4 2xl:py-4 py-2 md:flex hidden items-end justify-end 2xl:-mx-5 lg:-mx-3 font-semibold cursor-pointer">
+            Sign up
+          </button>
         </div>
       </div>
     </>
