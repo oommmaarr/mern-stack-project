@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 1000;
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://mern-stack-project-5evu.vercel.app/",
+    origin: "https://mern-stack-project-5evu.vercel.app",
     credentials: true
 }));
 app.use(express.json());
