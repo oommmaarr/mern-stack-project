@@ -15,6 +15,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     "https://mern-stack-project-5evu.vercel.app", 
+    "https://mern-stack-project-nine-chi.vercel.app",
     "http://localhost:3000",
 ];
 
