@@ -43,9 +43,10 @@ const Services = () => {
             <p className="lg:text-xl text-sm text-gray-700 mb-10 relative z-10 font-medium">
               {t("services.cta.description")}
             </p>
-            <button className="cursor-pointer lg:px-12 lg:py-4 px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full text-white font-bold text-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_20px_50px_rgba(255,87,34,0.5)] relative overflow-hidden z-10">
+            <button className="cursor-pointer lg:px-12 lg:py-4 px-8 py-3 bg-linear-to-r from-orange-500 to-orange-400 rounded-full text-white font-bold text-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_20px_50px_rgba(255,87,34,0.5)] relative overflow-hidden z-10"
+            onClick={()=>window.open("https://wa.me/+201040489093", "_blank")}>
               <span className="relative z-10">{t("services.cta.button")}</span>
-              <div className="absolute -top-1/2 -left-[60%] w-1/5 h-[200%] bg-gradient-to-r from-transparent via-white/60 to-transparent skew-x-[-20deg] animate-[shine_3s_infinite]"></div>
+              <div className="absolute -top-1/2 -left-[60%] w-1/5 h-[200%] bg-linear-to-r from-transparent via-white/60 to-transparent skew-x-[-20deg] animate-[shine_3s_infinite]"></div>
             </button>
           </div>
         </section>
@@ -239,7 +240,7 @@ const Services = () => {
 
         {/* Developer Section */}
         <section className="py-16 px-5 relative z-[2]">
-          <div className="max-w-[1400px] mx-auto">
+          <div className="max-w-[1400px]  mx-auto">
             <div className="text-center mb-10">
               <h2 className="font-['Tajawal'] text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
                 {locale === "ar" ? "تم إنشاء هذا الموقع بواسطة" : "This Website Was Created By"}

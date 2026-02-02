@@ -13,7 +13,7 @@ const AdminDashboard = () => {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
       {/* رسالة الترحيب - مبرمجة بناءً على اللغة والاسم */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 md:mt-0 mt-25">
         <h1 className="text-4xl md:text-5xl font-bold mb-4" dir={`${lang ==="ar"? "rtl" : "ltr"}`}>
           {lang === "ar" ? "مرحباً بك يا" : "Welcome,"} 
           <span className="text-[#FC530A]"> {authUser?.fullname || "Admin"}</span>
