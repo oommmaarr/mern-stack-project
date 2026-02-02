@@ -17,7 +17,6 @@ const Notch = () => {
   const lang = useLangStore((s) => s.lang);
   const setLang = useLangStore((s) => s.setLang);
   const t = lang === "en" ? en : ar;
-  console.log(authUser);
   const navItems = [
     { name: t.nav.home, href: "/" },
     { name: t.nav.services, href: "/Services" },
