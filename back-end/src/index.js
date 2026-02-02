@@ -9,13 +9,13 @@ import orderRoutes from './routes/order.route.js'
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 1000;
+app.use(cookieParser());
 app.use(cors({
-    origin: true,
+    origin: "https://mern-stack-project-5evu.vercel.app/",
     credentials: true
 }));
-
 app.use(express.json());
-app.use(cookieParser());
+
 app.use('/api/auth', authRoutes);
 app.use('/api/service' , serviceRoutes)
 app.use('/api/order' ,  orderRoutes )

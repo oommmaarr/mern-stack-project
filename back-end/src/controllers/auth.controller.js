@@ -75,10 +75,9 @@ export const logoutController = (req, res) => {
   try {
     res.cookie("jwt", "", {
       httpOnly: true,
+      secure: true,
+      sameSite: "None",
       expires: new Date(0),
-      secure: process.env.NODE_ENV !== "development",
-      sameSite: "strict",
-      path: "/",
     });
 
     res.status(200).json({ message: "Logged out successfully." });
@@ -87,7 +86,6 @@ export const logoutController = (req, res) => {
     res.status(500).json({ message: "Server Error" });
   }
 };
-
 export const checkAuthController = async (req, res) => {
   try {
     res.status(200).json({ user: req.user });
