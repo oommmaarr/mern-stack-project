@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About"
+  },
+  "profile": {
+    "userProfile": "User Profile",
+    "menu": {
+      "orders": "Orders",
+      "promote": "Promote User",
+      "dashboard": "Dashboard",
+      "logout": "Logout",
+      "language": "Language"
+    }
+  },
+  "toast": {
+    "logoutSuccess": "Logged out successfully",
+    "logoutError": "Something went wrong, please try again"
+  },
+  "lang": {
+    "en": "EN",
+    "ar": "AR"
+  },
+  "landing": {
+    "badge": "#1 in Egypt",
+    "headline1": "All Your Services",
+    "headline2": "In One ",
+    "Place": "Place.",
+    "sub1": "Game Top-Ups – Social Media Services – Digital Solutions",
+    "sub2": "Fast Delivery & 24/7 Support",
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "Learn More"
+  },
+  "about": {
+    "badgeLabel": "New: Real-Time Tracking",
+    "badgeSub": "Streamlined. Professional. Secure.",
+    "heading": "Your Premium Hub for Service Requests and Execution.",
+    "description": "We bridge the gap between your requirements and high-quality results. Our specialized platform empowers you to request custom services, monitor progress in real-time, and manage secure payments—all under professional supervision.",
+    "placeOrder": "Place an Order",
+    "dashboard" : "Show Dashboard",
+    "viewServices": "View Services",
+    "features": [
+      "Smart Order Tracking (Pending, Approved, Completed)",
+      "Personalized Dashboard for Order History",
+      "Secure Payment Verification & Documentation",
+      "Direct Communication with Admin Support",
+      "Scalable Solutions for Digital Growth"
+    ],
+    "status1_title": "Instant Updates",
+    "status1_desc": "Stay informed. Get notified the moment your request status changes.",
+    "status2_title": "Verified Safety",
+    "status2_desc": "Every transaction and order is secured with end-to-end encryption."
+  },
+  "services": {
+    "title": "Services",
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Choose the right service and begin your journey with us today",
+      "button": "Contact Us"
+    },
+    "card": {
+      "badge": "New",
+      "features": {
+        "fastDelivery": "Fast Delivery",
+        "support247": "24/7 Support",
+        "qualityGuarantee": "Quality Guarantee"
+      },
+      "pricing": {
+        "label": "Price",
+        "currency": "EGP",
+        "multipleRates": "Multiple Rates"
+      },
+      "detailsButton": "Service Details"
+    }
+  },
+  "serviceDetails": {
+    "noImage": "No Image",
+    "features": {
+      "fastDelivery": "Fast Delivery",
+      "support247": "24/7 Support",
+      "qualityGuarantee": "Quality Guarantee"
+    },
+    "pricing": {
+      "label": "Price",
+      "currency": "EGP",
+      "multipleRates": "Multiple Rates"
+    },
+    "orderButton": "Order Service Now",
+    "addedBy": "Added by"
+  },
+  "createOrder": {
+    "title": "Confirm Order",
+    "serviceIdLabel": "Service ID",
+    "notesLabel": "Your Notes",
+    "notesPlaceholder": "Write any details you'd like to add and include a way for the admin to contact you",
+    "submitButton": "Confirm Order",
+    "submitting": "Submitting...",
+    "validation": {
+      "notesRequired": "Please write your notes before confirming"
+    },
+    "messages": {
+      "success": "Order sent successfully! Redirecting...",
+      "error": "An error occurred while sending the order, please try again"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Log in to your account",
+      "subtitle": "Please enter your details",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "submit": "Log In",
+      "subLink": "Don't have an account?",
+      "linkText": "Sign Up",
+      "logging": "Logging In...",
+      "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "passwordRequired": "Password is required",
+        "passwordShort": "Password must be at least 6 characters"
+      }
+    },
+    "signup": {
+      "title": "Get Started Now",
+      "subtitle": "Enter your details to create your account",
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "submit": "Sign Up",
+      "linkText": "Login",
+      "signing": "Signing Up...",
+      "validation": {
+        "nameRequired": "Name is required",
+        "nameShort": "Name must be at least 3 characters",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "passwordRequired": "Password is required",
+        "passwordShort": "Password must be at least 6 characters"
+      }
+    }
+  },
+  "orders": {
+    "title": "My Orders",
+    "subtitle": "Track your orders status and details",
+    "stats": {
+      "total": "Total Orders",
+      "pending": "Pending",
+      "completed": "Completed"
+    },
+    "status": {
+      "pending": "Pending",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "processing": "Processing"
+    },
+    "payment": {
+      "paid": "Paid",
+      "unpaid": "Unpaid"
+    },
+    "empty": {
+      "title": "No orders yet",
+      "description": "Start by ordering a new service now",
+      "button": "Browse Services"
+    },
+    "card": {
+      "unknownService": "Unknown Service",
+      "orderNumber": "Order Number",
+      "yourNotes": "Your Notes",
+      "orderDate": "Order Date",
+      "lastUpdate": "Last Update",
+      "detailsButton": "Order Details"
+    }
+  },
+  "crudServices": {
+    "title": "Services Management Panel",
+    "subtitle": "Manage, edit, or delete available services in the system",
+    "addNewButton": "Add New Service",
+    "noServices": "No services added yet",
+    "addService": {
+      "title": "Add New Service",
+      "nameLabel": "Service Name",
+      "namePlaceholder": "Example: Free Fire Gems Top-Up",
+      "descriptionLabel": "Service Description",
+      "descriptionPlaceholder": "Write service details here",
+      "priceLabel": "Price (Optional)",
+      "imageLabel": "Service Image",
+      "imageUploadText": "Click to upload image",
+      "imageSize": "PNG, JPG (Max 2MB)",
+      "submitButton": "Save & Publish Service",
+      "changeImageText": "Change Image"
+    },
+    "updateService": {
+      "title": "Update Service",
+      "nameLabel": "Service Name",
+      "descriptionLabel": "Service Description",
+      "priceLabel": "Price (EGP)",
+      "imageLabel": "Service Image",
+      "updateImageText": "Update Image",
+      "imageSelectedText": "Image selected",
+      "submitButton": "Update Data"
+    },
+    "deleteService": {
+      "title": "Are you sure?",
+      "message": "You are about to delete a service",
+      "warning": "This action cannot be undone and all related data will be deleted.",
+      "confirmButton": "Yes, delete now",
+      "cancelButton": "Cancel Operation"
+    },
+    "currentPrice": "Current Price",
+    "currency": "EGP",
+    "active": "Active",
+    "edit": "Edit",
+    "delete": "Delete",
+    "messages": {
+      "addSuccess": "Service added successfully",
+      "addError": "An error occurred while adding the service",
+      "updateSuccess": "Service updated successfully",
+      "updateError": "An error occurred while updating the service",
+      "deleteSuccess": "Service deleted successfully",
+      "deleteError": "An error occurred while deleting the service"
+    }
+  },
+  "promoteUser": {
+    "title": "Promote User",
+    "subtitle": "Promote users to admin privileges",
+    "cardTitle": "Grant Admin Privileges",
+    "cardDescription": "Enter the user's email address to promote them to admin",
+    "warningTitle": "Important Notice",
+    "warningText": "When promoting a user to admin, they will receive full admin privileges in the system",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "example@domain.com",
+    "submitButton": "Promote to Admin",
+    "submitting": "Promoting...",
+    "permissionsTitle": "📋 Permissions the admin will receive:",
+    "permissions": [
+      "Manage all orders",
+      "Manage services and products",
+      "Promote other users",
+      "Full access to all data"
+    ],
+    "validation": {
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Email address is invalid"
+    },
+    "messages": {
+      "error": "Promotion failed",
+      "successTitle": "Promotion successful",
+      "successDesc": "User {email} has been promoted to admin",
+      "errorTitle": "Promotion error",
+      "validationError": "Please enter a valid email address",
+      "validationErrorDesc": "Please verify the entered data"
+    }
+  },
+  "crudOrders": {
+    "title": "Manage Orders",
+    "subtitle": "Monitor and manage all customer orders",
+    "totalOrders": "Total Orders",
+    "noOrders": "No orders currently",
+    "orderNumber": "Order Number",
+    "service": "Service",
+    "customerName": "Customer Name",
+    "email": "Email Address",
+    "paymentStatus": "Payment Status",
+    "currentStatus": "Current Status",
+    "customerNotes": "Customer Notes",
+    "createdDate": "Creation Date",
+    "orderDetails": "Order Details",
+    "changeOrderStatus": "Change Order Status",
+    "acceptOrder": "Accept Order",
+    "rejectOrder": "Reject Order",
+    "returnPending": "Return to Pending",
+    "paid": "Paid",
+    "unpaid": "Unpaid",
+    "status": {
+      "pending": "Pending",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "messages": {
+      "acceptSuccess": "Order accepted successfully ✅",
+      "acceptDesc": "Order status updated to completed",
+      "rejectSuccess": "Order rejected",
+      "rejectDesc": "Order status updated to cancelled",
+      "returnSuccess": "Order returned",
+      "returnDesc": "Order status updated to pending",
+      "updateError": "Error updating status",
+      "updateErrorDesc": "Please try again",
+      "loadError": "Error loading orders"
+    }
+  }
+}
