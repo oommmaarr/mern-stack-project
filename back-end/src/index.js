@@ -11,10 +11,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 1000;
 
+// Trust proxy is required for secure cookies on platforms like Railway/Vercel
+app.set('trust proxy', 1);
+
 app.use(cookieParser());
 
-const allowedOrigins = [    
-    "https://mern-stack-project-5evu.vercel.app", 
+const allowedOrigins = [
+    "https://mern-stack-project-5evu.vercel.app",
     "https://mern-stack-project-nine-chi.vercel.app",
     "https://mern-stack-project-5evu-oiddrztml.vercel.app",
     "http://localhost:3000",

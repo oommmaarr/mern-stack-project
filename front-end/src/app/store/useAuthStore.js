@@ -12,7 +12,8 @@ export const useAuthStore = create((set) => {
       try {
         const response = await instance.get("auth/check-auth");
         set({ authUser: response.data.user });
-      } catch {
+      } catch (error) {
+        console.log("CheckAuth Error:", error);
         set({ authUser: null });
       } finally {
         set({ isCheckingAuth: false });
@@ -63,6 +64,6 @@ export const useAuthStore = create((set) => {
         set({ isLoginMode: false });
       }
     },
-    
+
   };
 });
