@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 1000;
 
 app.use(cookieParser());
 
-const allowedOrigins = [
+const allowedOrigins = [    
     "https://mern-stack-project-5evu.vercel.app", 
     "https://mern-stack-project-nine-chi.vercel.app",
     "http://localhost:3000",
@@ -21,11 +21,17 @@ const allowedOrigins = [
 
 app.use(cors({
     origin: (origin, callback) => {
-        if (!origin) return callback(null, true); // Postman / server-to-server
-        if (allowedOrigins.includes(origin)) return callback(null, true);
-        return callback(new Error("Not allowed by CORS"));
+        if (!origin) return callback(null, true);
+        
+        if (allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            console.log("CORS Rejected Origin:", origin); 
+            callback(new Error("Not allowed by CORS"));
+        }
     },
-    credentials: true, 
+    credentials: true,
+    optionsSuccessStatus: 200 
 }));
 
 app.use(express.json());
