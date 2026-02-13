@@ -25,9 +25,10 @@ export const registerController = async (req, res) => {
       fullname,
     });
     await newUser.save();
-    generateToken({ id: newUser._id, role: newUser.role }, res);
+    const token = generateToken({ id: newUser._id, role: newUser.role }, res);
     res.status(201).json({
       message: "User registered successfully.",
+      token,
       user: {
         id: newUser._id,
         email: newUser.email,
@@ -56,9 +57,10 @@ export const LoginController = async (req, res) => {
     if (!isMatch) {
       return res.status(400).json({ message: "Invalid email or password." });
     }
-    generateToken({ id: user._id, role: user.role }, res);
+    const token = generateToken({ id: user._id, role: user.role }, res);
     res.status(200).json({
       message: "Login successful.",
+      token,
       user: {
         id: user._id,
         email: user.email,
@@ -109,9 +111,10 @@ export const promotetoAdmin = async (req, res) => {
     }
     user.role = "admin";
     await user.save();
-    generateToken({ id: user._id, role: user.role }, res);
+    const token = generateToken({ id: user._id, role: user.role }, res);
     res.status(200).json({
       message: "User promoted to Admin successfully",
+      token,
       user: {
         email: user.email,
         fullname: user.fullname,
