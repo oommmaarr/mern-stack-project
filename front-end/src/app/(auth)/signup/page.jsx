@@ -265,7 +265,7 @@ const Signup = () => {
                     {isSignupMode ? t('auth.signup.signing') : t('auth.signup.submit')}
                   </button>
                 </form>
-                <p className="mt-5 z-100">{t('auth.signup.linkText')} <Link href="/login" className="text-[#FC530A] font-semibold">{t('auth.signup.linkText')}</Link></p>
+                <p className="mt-5 z-100">Have An Accout?<Link href="/login" className="text-[#FC530A] font-semibold">{t('auth.signup.linkText')}</Link></p>
               </div>
             </div>
 
