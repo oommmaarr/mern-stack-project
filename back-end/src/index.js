@@ -16,22 +16,26 @@ app.use(cookieParser());
 const allowedOrigins = [    
     "https://mern-stack-project-5evu.vercel.app", 
     "https://mern-stack-project-nine-chi.vercel.app",
+    "https://mern-stack-project-5evu-oiddrztml.vercel.app",
     "http://localhost:3000",
 ];
 
 app.use(cors({
     origin: (origin, callback) => {
         if (!origin) return callback(null, true);
-        
-        if (allowedOrigins.includes(origin)) {
+
+        const isVercel = origin.startsWith("https://mern-stack-project") && origin.endsWith(".vercel.app");
+        const isLocal = origin === "http://localhost:3000";
+
+        if (isVercel || isLocal) {
             callback(null, true);
         } else {
-            console.log("CORS Rejected Origin:", origin); 
+            console.log("CORS Rejected Origin:", origin);
             callback(new Error("Not allowed by CORS"));
         }
     },
     credentials: true,
-    optionsSuccessStatus: 200 
+    optionsSuccessStatus: 200
 }));
 
 app.use(express.json());
