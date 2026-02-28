@@ -30,7 +30,11 @@ export const ClientWrapper = ({ children }) => {
     }
   }, [authUser, isCheckingAuth, pathname, router]);
 
-  if (isCheckingAuth) {
+  const isRedirectingToLogin = !isCheckingAuth && !authUser && pathname !== "/login" && pathname !== "/signup";
+  const isRedirectingToHome = !isCheckingAuth && authUser && (pathname === "/login" || pathname === "/signup");
+  const isRedirecting = isRedirectingToLogin || isRedirectingToHome;
+
+  if (isCheckingAuth || isRedirecting) {
     return (
       <div className="flex items-center justify-center w-full min-h-screen">
         <Lottie animationData={loadingAnimation} loop={true} />
