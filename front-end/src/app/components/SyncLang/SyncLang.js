@@ -9,8 +9,10 @@ export default function SyncLang() {
   const setLang = useLangStore((s) => s.setLang)
 
   useEffect(() => {
-    setLang(locale)
-  }, [locale])
+    if (locale) {
+      setLang(locale)
+    }
+  }, [locale, setLang])
 
   return null
 }

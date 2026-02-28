@@ -357,7 +357,7 @@ const Services = () => {
                     <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
                     <line x1="2" y1="10" x2="22" y2="10"></line>
                   </svg>
-                  {locale === "ar" ? "أرقام استلام الأموال" : "Money Reception Numbers"}
+                  {locale === "ar" ? "أرقام الكاش" : "Cash Numbers"}
                 </h4>
                 <div className="flex flex-col gap-3">
                   <div className="bg-white px-4 py-3 rounded-xl shadow-sm text-gray-800 font-bold font-mono border border-orange-100 flex justify-between items-center text-lg">
