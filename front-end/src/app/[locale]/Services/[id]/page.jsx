@@ -67,7 +67,7 @@ const ServiceDetails = () => {
             {service.serviceName}
           </h1>
 
-          <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6 md:mb-8 whitespace-pre-wrap">
             {service.serviceDescription}
           </p>
 
